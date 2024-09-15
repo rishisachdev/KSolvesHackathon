@@ -5,7 +5,9 @@ The Event Management System is a platform designed to simplify the creation and 
 Tools and Technologies:
 
 •	Frontend: ReactJS
+
 •	Backend: Java, Spring, Maven
+
 •	Database: MySQL
 
 Problems Solved:
