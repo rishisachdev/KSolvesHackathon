@@ -17,50 +17,9 @@ Problems Solved:
 •	Notifications & Reminders: The system sends reminders before events
 
 Database Design:
+![image](https://github.com/user-attachments/assets/9441b173-1292-4671-86b7-6dcf002cd93f)
 
-Events Table
-
-Column      	 Data Type    	 Description                            
- id          	 INT          	 Primary Key 
- title       	 VARCHAR(255) 	 Title of the event                     
- description 	 TEXT         	 Description of the event               
- date        	 DATE         	 Date of the event                      
- time        	 TIME         	 Time of the event                      
- location    	 VARCHAR(255) 	 Location of the event                  
- created_by  	 INT          	 Foreign Key to `users` (Admin)         
- updated_at  	 TIMESTAMP    	 Timestamp of the last update           
-
-User Table
-
-Column       	 Data Type    	 Description                                                
- id           	 INT          	 Primary Key (Auto Increment)                               
- event_id     	 INT          	 Foreign Key to `events`                                    
- user_id      	 INT          	 Foreign Key to `users` (Customer)                          
- status       	 ENUM         	 Status of attendance (`CONFIRMED`, `PENDING`, `DECLINED`)  
- responded_at 	 TIMESTAMP    	 Time of response                                           
-		
-
-Notifications
-
-Column   	 Data Type    	 Description                                
-----------	--------------	--------------------------------------------
- id       	 INT          	 Primary Key (Auto Increment)               
- user_id  	 INT          	 Foreign Key to `users`                     
- event_id 	 INT          	 Foreign Key to `events`                    
- message  	 TEXT         	 Notification message                       
- type     	 ENUM         	 Type of notification (`REMINDER`, `UPDATE`)
- status   	 ENUM         	 Status of notification (`SENT`, `PENDING`) 
- sent_at  	 TIMESTAMP    	 Time when the notification was sent        
-		
-
-Attendees
-
-Column       	 Data Type    	 Description                                                
- id           	 INT          	 Primary Key (Auto Increment)                               
- event_id     	 INT          	 Foreign Key to `events`                                    
- user_id      	 INT          	 Foreign Key to `users` (Customer)                          
- status       	 ENUM         	 Status of attendance (`CONFIRMED`, `PENDING`, `DECLINED`)  
- responded_at 	 TIMESTAMP    	 Time of response      
+![image](https://github.com/user-attachments/assets/e5c3ac66-3f8a-472a-8ae8-98d5e5b1f74d)
 
 
  ![image](https://github.com/user-attachments/assets/a02502a9-e003-4287-bb49-cb49f61756cb)
