@@ -1,11 +1,15 @@
 Event Management System
+
 The Event Management System is a platform designed to simplify the creation and management of events. The system offers a range of functionalities, including event creation, scheduling, RSVPs, attendee management, and notifications. Users can create, view, and delete events, as well as track RSVPs and attendee participation. The system also supports sending reminders to attendees and offers the option of in-app notifications or email alerts.
+
 Tools and Technologies:
+
 •	Frontend: ReactJS
 •	Backend: Java, Spring, Maven
 •	Database: MySQL
 
 Problems Solved:
+
 •	Event Creation & Management: Users can create, list, view, and delete events, with detailed information like date, location, and description.
 •	RSVP System: Attendees can RSVP to events, marking their attendance status.
 •	Scheduling: Upcoming events are displayed on a calendar or list, and reminders can be scheduled for participants.
@@ -13,7 +17,9 @@ Problems Solved:
 •	Notifications & Reminders: The system sends reminders before events
 
 Database Design:
+
 Events Table
+
 Column      	 Data Type    	 Description                            
  id          	 INT          	 Primary Key 
  title       	 VARCHAR(255) 	 Title of the event                     
@@ -25,6 +31,7 @@ Column      	 Data Type    	 Description
  updated_at  	 TIMESTAMP    	 Timestamp of the last update           
 
 User Table
+
 Column       	 Data Type    	 Description                                                
  id           	 INT          	 Primary Key (Auto Increment)                               
  event_id     	 INT          	 Foreign Key to `events`                                    
@@ -34,6 +41,7 @@ Column       	 Data Type    	 Description
 		
 
 Notifications
+
 Column   	 Data Type    	 Description                                
 ----------	--------------	--------------------------------------------
  id       	 INT          	 Primary Key (Auto Increment)               
@@ -46,6 +54,7 @@ Column   	 Data Type    	 Description
 		
 
 Attendees
+
 Column       	 Data Type    	 Description                                                
  id           	 INT          	 Primary Key (Auto Increment)                               
  event_id     	 INT          	 Foreign Key to `events`                                    
