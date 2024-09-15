@@ -24,6 +24,9 @@ Problems Solved:
 ![image](https://github.com/user-attachments/assets/2dbeb9f3-ca24-493c-97fa-1954431963b5)
 
 Database Design:
+
+
+
 ![image](https://github.com/user-attachments/assets/520b3938-e695-4def-9fe0-4db5f8bf9365)
 ![image](https://github.com/user-attachments/assets/9d0a3d24-92eb-461c-9bac-1058e3afb3a0)
 
